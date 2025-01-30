@@ -48,14 +48,7 @@ function FuturisticBackground() {
         fade
         speed={1}
       />
-      <Cloud
-        opacity={0.5}
-        speed={0.4}
-        width={10}
-        depth={1.5}
-        segments={20}
-        position={[0, 5, -10]}
-      />
+      <Cloud opacity={0.5} speed={0.4} segments={20} position={[0, 5, -10]} />
       <mesh position={[0, 0, -10]} rotation={[0, 0, 0]}>
         <planeGeometry args={[100, 100]} />
         <meshStandardMaterial
