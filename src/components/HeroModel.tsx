@@ -14,12 +14,10 @@ import {
 import { Suspense, useRef } from "react";
 import * as THREE from "three";
 
-useGLTF.preload("/3d/2022_bmw_g82_m4_adro_carbon_fiber_widebody_kit.glb");
+useGLTF.preload("/3d/town4new.glb");
 
 function Model() {
-  const { scene } = useGLTF(
-    "/3d/2022_bmw_g82_m4_adro_carbon_fiber_widebody_kit.glb"
-  );
+  const { scene } = useGLTF("/3d/town4new.glb");
 
   const modelRef = useRef<THREE.Group>(null);
 

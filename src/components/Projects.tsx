@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 
 const projects = [
   {
@@ -171,20 +171,40 @@ const ProjectCard = ({
 
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
-
-  useEffect(() => {
-    if (containerRef.current) {
-      setWidth(
-        containerRef.current.scrollWidth - containerRef.current.offsetWidth
-      );
-    }
-  }, []);
+  const width = typeof window !== "undefined" ? window.innerWidth : 0;
 
   return (
-    <section className="py-20 px-4 bg-gray-900 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 overflow-hidden bg-gray-950">
+      {/* Background Effects */}
+      <div className="absolute inset-0">
+        {/* Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950" />
+
+        {/* Animated Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+
+        {/* Glowing Orbs */}
+        <motion.div
+          animate={{
+            opacity: [0.2, 0.4, 0.2],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{ duration: 5, repeat: Infinity }}
+          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-blue-500/20 -translate-x-1/2 -translate-y-1/2 blur-3xl"
+        />
+        <motion.div
+          animate={{
+            opacity: [0.2, 0.4, 0.2],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{ duration: 7, repeat: Infinity }}
+          className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-purple-500/20 translate-x-1/2 translate-y-1/2 blur-3xl"
+        />
+      </div>
+
+      {/* Content Container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <motion.div className="text-center mb-16">
           <motion.h2 className="text-4xl md:text-5xl font-clash font-bold mb-4 text-white/90 tracking-tighter">
             Our Projects

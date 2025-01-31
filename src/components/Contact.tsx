@@ -187,23 +187,7 @@ const Contact = () => {
               </svg>
             </div>
 
-            {/* Keep existing contact info cards */}
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              <motion.div
-                whileHover={{ y: -5 }}
-                className="p-6 bg-gray-800/50 backdrop-blur-xl rounded-xl border border-gray-700"
-              >
-                <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                <p className="text-gray-400">hello@devlaunch.com</p>
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -5 }}
-                className="p-6 bg-gray-800/50 backdrop-blur-xl rounded-xl border border-gray-700"
-              >
-                <h3 className="text-lg font-semibold text-white mb-2">Phone</h3>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
-              </motion.div>
-            </div>
+            
           </motion.div>
         </div>
       </div>

@@ -57,9 +57,9 @@ const Navbar = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed w-full z-50 transition-all duration-500 ${
+        className={`fixed w-full z-[100] transition-all duration-500 ${
           isScrolled || isMobileMenuOpen
-            ? "bg-gray-900/95 backdrop-blur-xl py-4 border-b border-gray-800/50"
+            ? "bg-gray-900/70 backdrop-blur-xl border-b border-gray-800/50 py-4"
             : "bg-transparent py-6"
         }`}
       >
@@ -183,7 +183,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 pt-24 bg-gray-900/98 backdrop-blur-xl"
+            className="fixed inset-0 z-[90] pt-24 bg-gray-900/95 backdrop-blur-xl"
           >
             <div className="container mx-auto px-4">
               <div className="flex flex-col space-y-6">
