@@ -4,46 +4,58 @@ import { useRef, useState } from "react";
 
 const projects = [
   {
-    title: "E-commerce Platform",
+    title: "SEO Tool",
     description:
-      "A full-featured online shopping platform with payment integration",
-    type: "ecommerce",
-    tech: ["Next.js", "Node.js", "MongoDB"],
-    gradient: "from-blue-500/10 to-cyan-500/10",
-    accentColor: "blue-400",
+      "Open source SEO optimization tool for content analysis and keyword optimization",
+    type: "opensource",
+    tech: ["Next.js", "OpenAI API", "TailwindCSS"],
+    gradient: "from-green-500/10 to-emerald-500/10",
+    accentColor: "green-400",
   },
   {
-    title: "Healthcare Management",
+    title: "AI Blog Extension",
     description:
-      "Digital solution for managing patient records and appointments",
-    type: "healthcare",
-    tech: ["React", "Express", "PostgreSQL"],
-    gradient: "from-purple-500/10 to-pink-500/10",
-    accentColor: "purple-400",
+      "Browser extension for AI-powered blog content generation and enhancement",
+    type: "opensource",
+    tech: ["JavaScript", "Chrome API", "GPT-3"],
+    gradient: "from-indigo-500/10 to-blue-500/10",
+    accentColor: "indigo-400",
   },
   {
-    title: "Real Estate Platform",
-    description: "Property listing and management platform",
-    type: "realestate",
-    tech: ["Vue.js", "Django", "AWS"],
-    gradient: "from-emerald-500/10 to-teal-500/10",
-    accentColor: "emerald-400",
+    title: "MultiLLM Dashboard",
+    description:
+      "Unified dashboard for managing and comparing multiple Language Learning Models",
+    type: "opensource",
+    tech: ["React", "Python", "FastAPI"],
+    gradient: "from-violet-500/10 to-purple-500/10",
+    accentColor: "violet-400",
   },
   {
-    title: "AI Analytics Dashboard",
-    description: "Real-time data visualization and analytics platform",
-    type: "analytics",
-    tech: ["Python", "TensorFlow", "React"],
-    gradient: "from-orange-500/10 to-amber-500/10",
-    accentColor: "orange-400",
+    title: "Yorigin",
+    description:
+      "Open source project for tracking and managing digital content origins",
+    type: "opensource",
+    tech: ["TypeScript", "Node.js", "PostgreSQL"],
+    gradient: "from-cyan-500/10 to-blue-500/10",
+    accentColor: "cyan-400",
   },
   {
-    title: "Social Media App",
-    description: "Modern social networking platform with real-time features",
-    type: "social",
-    tech: ["React Native", "Firebase", "GraphQL"],
+    title: "AIChatBot Extension",
+    description:
+      "Intelligent chatbot extension with natural language processing capabilities",
+    type: "opensource",
+    tech: ["JavaScript", "WebSocket", "NLP"],
     gradient: "from-rose-500/10 to-pink-500/10",
     accentColor: "rose-400",
+  },
+  {
+    title: "3B1B AI Teacher",
+    description:
+      "AI-powered educational video generator inspired by 3Blue1Brown's teaching style",
+    type: "opensource",
+    tech: ["Python", "PyTorch", "Manim"],
+    gradient: "from-amber-500/10 to-orange-500/10",
+    accentColor: "amber-400",
   },
 ];
 

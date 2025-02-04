@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
+import ClientProjects from "@/components/ClientProjects";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       </section>
       <section id="services">
         <Services />
+      </section>
+      <section id="clientProjects">
+        <ClientProjects />
       </section>
       <section id="projects">
         <Projects />
