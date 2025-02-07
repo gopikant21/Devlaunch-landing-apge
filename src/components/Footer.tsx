@@ -34,9 +34,9 @@ const footerLinks = [
   {
     title: "Social",
     links: [
-      { name: "Twitter", href: "#" },
-      { name: "LinkedIn", href: "#" },
-      { name: "GitHub", href: "#" },
+      { name: "Twitter", href: "#"},
+      { name: "LinkedIn", href: "https://www.linkedin.com/company/dvlaunch/posts/?feedView=all" },
+      { name: "GitHub", href: "https://github.com/LostNSeeker" },
     ],
   },
 ];
@@ -106,8 +106,8 @@ const Footer = () => {
               {/* Social Icons */}
               <div className="flex gap-3 mt-6">
                 <SocialIcon icon={Twitter} href="#" />
-                <SocialIcon icon={Linkedin} href="#" />
-                <SocialIcon icon={Github} href="#" />
+                <SocialIcon icon={Linkedin} href="https://www.linkedin.com/company/dvlaunch/posts/?feedView=all" />
+                <SocialIcon icon={Github} href="https://github.com/LostNSeeker" />
               </div>
             </motion.div>
           </div>
